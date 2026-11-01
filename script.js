@@ -5,7 +5,7 @@ let cart = [];
 
 // Add your WhatsApp number later.
 // Format: 923XXXXXXXXX
-const whatsappNumber = "923XXXXXXXXX";
+const whatsappNumber = "923362403922";
 
 // ADD PRODUCTS TO CART
 document.querySelectorAll(".add-cart").forEach(button => {
