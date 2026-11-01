@@ -1,6 +1,6 @@
 let cart = [];
 
-const whatsappNumber = "923362403922";
+const whatsappNumber = "000000000000";
 
 document.querySelectorAll(".add-cart").forEach(button => {
     button.addEventListener("click", function () {
