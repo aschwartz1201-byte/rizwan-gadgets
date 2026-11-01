@@ -5,6 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<meta name="theme-color" content="#087BFA">
+
+<link rel="manifest" href="manifest.webmanifest">
+
+<link rel="icon" href="icons/icon-192.png">
+
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+    
     <title>RIZWAN GADGETS | Smart Gadgets Store</title>
 
     <link rel="stylesheet" href="style.css">
@@ -176,6 +184,14 @@
 
     <!-- JAVASCRIPT: MUST BE BEFORE BODY CLOSE -->
     <script src="script.js"></script>
-
+<script>
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+        navigator.serviceWorker.register("./service-worker.js")
+            .then(() => console.log("RIZWAN GADGETS app is ready!"))
+            .catch(error => console.error("App setup error:", error));
+    });
+}
+</script>
 </body>
 </html>
