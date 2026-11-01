@@ -4,137 +4,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RIZWAN GADGETS | Smart Shopping</title>
+
+    <title>RIZWAN GADGETS | Smart Gadgets Store</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <div class="logo">RIZWAN<span> GADGETS</span></div>
+    <!-- HEADER -->
+    <header class="header">
+        <a href="#" class="logo">RIZWAN <span>GADGETS</span></a>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#categories">Categories</a>
-        <a href="#products">Products</a>
-        <a href="#about">About</a>
-    </nav>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+        </nav>
 
-    <a href="#products" class="shop-btn">SHOP NOW</a>
-</header>
+        <a href="#cart" class="cart-link">
+            🛒 Cart
+            <span id="cart-count">0</span>
+        </a>
+    </header>
 
-<section class="hero" id="home">
-    <div class="hero-content">
-        <p class="blue-text">YOUR SMART GADGET STORE</p>
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="blue-text">WELCOME TO RIZWAN GADGETS</p>
 
-        <h1>DISCOVER THE<br>
-        <span>FUTURE OF GADGETS.</span></h1>
+            <h1>DISCOVER THE FUTURE OF <span>GADGETS.</span></h1>
 
-        <p class="hero-description">
-            Discover useful, innovative and affordable
-            gadgets that make everyday life easier.
+            <p>
+                Explore smart, useful and affordable gadgets
+                that make everyday life easier.
+            </p>
+
+            <a href="#products" class="main-btn">SHOP NOW →</a>
+        </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="categories section" id="categories">
+
+        <p class="blue-text">EXPLORE OUR STORE</p>
+        <h2>SHOP BY CATEGORY</h2>
+
+        <div class="category-container">
+            <div class="category-card">⚡ Electronics</div>
+            <div class="category-card">💡 Lighting</div>
+            <div class="category-card">🎧 Accessories</div>
+        </div>
+
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="products section" id="products">
+
+        <p class="blue-text">OUR COLLECTION</p>
+        <h2>FEATURED GADGETS</h2>
+
+        <div class="product-container">
+
+            <div class="product-card">
+                <img src="https://placehold.co/400x300/111A2A/168BFF?text=Mini+Fan"
+                     alt="Mini USB Fan">
+
+                <h3>Mini USB Fan</h3>
+                <p class="price">Rs. 850</p>
+
+                <button class="add-cart"
+                        data-name="Mini USB Fan"
+                        data-price="850">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://placehold.co/400x300/111A2A/168BFF?text=LED+Light"
+                     alt="LED Night Light">
+
+                <h3>LED Night Light</h3>
+                <p class="price">Rs. 650</p>
+
+                <button class="add-cart"
+                        data-name="LED Night Light"
+                        data-price="650">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://placehold.co/400x300/111A2A/168BFF?text=Earbuds"
+                     alt="Wireless Earbuds">
+
+                <h3>Wireless Earbuds</h3>
+                <p class="price">Rs. 1500</p>
+
+                <button class="add-cart"
+                        data-name="Wireless Earbuds"
+                        data-price="1500">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://placehold.co/400x300/111A2A/168BFF?text=USB+Gadget"
+                     alt="USB Gadget">
+
+                <h3>USB Gadget</h3>
+                <p class="price">Rs. 450</p>
+
+                <button class="add-cart"
+                        data-name="USB Gadget"
+                        data-price="450">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SHOPPING CART -->
+    <section class="cart-section section" id="cart">
+
+        <p class="blue-text">YOUR SELECTION</p>
+        <h2>SHOPPING CART</h2>
+
+        <div id="cart-items">
+            <p>Your cart is empty.</p>
+        </div>
+
+        <h3 class="cart-total">
+            Total: Rs. <span id="cart-total">0</span>
+        </h3>
+
+        <button class="order-btn" onclick="orderOnWhatsApp()">
+            ORDER ON WHATSAPP
+        </button>
+
+        <button class="clear-btn" onclick="clearCart()">
+            CLEAR CART
+        </button>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+
+        <p class="blue-text">WHO WE ARE</p>
+        <h2>ABOUT RIZWAN GADGETS</h2>
+
+        <p>
+            RIZWAN GADGETS brings you useful and affordable
+            gadgets designed to make everyday life smarter.
+            Discover something new with us!
         </p>
 
-        <a href="#products" class="main-btn">
-            EXPLORE GADGETS →
-        </a>
-    </div>
-</section>
+    </section>
 
-<section class="categories" id="categories">
-    <p class="blue-text">EXPLORE OUR STORE</p>
-    <h2>SHOP BY CATEGORY</h2>
+    <!-- FOOTER -->
+    <footer>
+        <h2>RIZWAN <span>GADGETS</span></h2>
 
-    <div class="category-container">
-        <div class="category">
-            <div class="emoji">📱</div>
-            <h3>Mobile Gadgets</h3>
-        </div>
+        <p>Smart Gadgets. Smarter Living.</p>
 
-        <div class="category">
-            <div class="emoji">💡</div>
-            <h3>Smart Lighting</h3>
-        </div>
+        <p>© 2026 RIZWAN GADGETS. All rights reserved.</p>
+    </footer>
 
-        <div class="category">
-            <div class="emoji">🎧</div>
-            <h3>Audio Gadgets</h3>
-        </div>
-
-        <div class="category">
-            <div class="emoji">🏠</div>
-            <h3>Home Gadgets</h3>
-        </div>
-    </div>
-</section>
-
-<section class="products" id="products">
-
-    <p class="blue-text">OUR COLLECTION</p>
-    <h2>FEATURED GADGETS</h2>
-
-    <div class="product-container">
-
-        <div class="product-card">
-            <img src="https://placehold.co/300x220/111A2A/168BFF?text=Mini+Fan"
-                 alt="Mini USB Fan">
-            <h3>Mini USB Fan</h3>
-            <p class="price">Rs. 850</p>
-            <button class="add-cart">Add to Cart</button>
-        </div>
-
-        <div class="product-card">
-            <img src="https://placehold.co/300x220/111A2A/168BFF?text=LED+Light"
-                 alt="LED Night Light">
-            <h3>LED Night Light</h3>
-            <p class="price">Rs. 650</p>
-            <button class="add-cart">Add to Cart</button>
-        </div>
-
-        <div class="product-card">
-            <img src="https://placehold.co/300x220/111A2A/168BFF?text=Earbuds"
-                 alt="Wireless Earbuds">
-            <h3>Wireless Earbuds</h3>
-            <p class="price">Rs. 1,500</p>
-            <button class="add-cart">Add to Cart</button>
-        </div>
-
-        <div class="product-card">
-            <img src="https://placehold.co/300x220/111A2A/168BFF?text=USB+Gadget"
-                 alt="USB Gadget">
-            <h3>USB Gadget</h3>
-            <p class="price">Rs. 450</p>
-            <button class="add-cart">Add to Cart</button>
-        </div>
-
-    </div>
-
-</section>
-
-<div class="cart-section">
-    <h3>Ready to Order?</h3>
-    <p>Review your selected gadgets and order through WhatsApp.</p>
-    <button onclick="orderOnWhatsApp()" class="order-btn">
-        View Cart & Order on WhatsApp
-    </button>
-</div>
-
-<section class="about" id="about">
-    <h2>ABOUT RIZWAN GADGETS</h2>
-    <p>
-        We bring useful, innovative and affordable
-        gadgets to your neighbourhood.
-    </p>
-</section>
-
-<footer>
-    <h2>RIZWAN GADGETS</h2>
-    <p>SMART GADGETS. SMARTER LIVING.</p>
-    <p>© 2026 RIZWAN GADGETS</p>
-</footer>
-
-<script src="script.js"></script>
+    <!-- JAVASCRIPT: MUST BE BEFORE BODY CLOSE -->
+    <script src="script.js"></script>
 
 </body>
 </html>
-
